@@ -53,6 +53,8 @@ El curso se desarrollará teniendo en cuenta diferentes aspectos pedagógicos co
 * Soong, T.T., and M. Grigoriu (1993). Random Vibration of Mechanical and Structural Systems. Prentice Hall.
 * To, C.W.S. (2014). Stochastic Structural Dynamics: Application of Finite Element Methods. Wiley.
 
+---
+
 ## Observaciones que se quieren dejar por escrito:
  
 ### Asistencia al curso
