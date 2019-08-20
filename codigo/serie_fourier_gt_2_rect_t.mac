@@ -1,0 +1,24 @@
+/* Serie de Fourier de g(t) = 2*rect(t;1), para t \in [-2, 2] */
+/* https://en.wikipedia.org/wiki/Rectangular_function */
+kill(all);
+declare(n, integer);
+assume(n > 0);
+
+T : 4;
+h : 2; /* altura funcion boxcar */
+g(t) := if t >= -1 and t <= 1 then h else 0;
+a(n) := (2/T)*integrate(h*cos(2*%pi*n*t/T), t, -1, 1);
+b(n) := (2/T)*integrate(h*sin(2*%pi*n*t/T), t, -1, 1);
+
+terminos : makelist(n, n, 1, 20)$
+map('a, append([0],terminos));
+map('b, terminos);
+
+
+fs(nmax) := a(0)/2 + sum(a(n)*cos(2*%pi*n*t/T) + b(n)*sin(2*%pi*n*t/T), n, 1, nmax);
+
+/* los siguientes dos comandos son equivalentes */
+lista_fs : map('fs, terminos);
+/* lista_fs : create_list(fs(n), n, terminos); */
+
+with_slider(n, lista_fs, [g(t),n], [t,-6,6]);

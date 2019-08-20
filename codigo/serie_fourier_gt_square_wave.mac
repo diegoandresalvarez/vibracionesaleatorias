@@ -1,0 +1,29 @@
+/* Serie de Fourier de g(t) = square wave, para t \in [-10, 10] */
+/* https://en.wikipedia.org/wiki/Square_wave                    */
+
+kill(all);
+load("pw")$
+declare(n, integer);
+assume(n > 0);
+
+ratprint : false$ /* no muestra el mensaje "rat : replace" */
+
+T : 20;
+
+g(t) := pw([ -10, 0, -5,
+                 -5,  0,
+                  5,  5,
+                  0, 10], t);
+
+a(n) := (2/T)*pwint(g(t)*cos(2*%pi*n*t/T), t, -T/2, T/2);
+b(n) := (2/T)*pwint(g(t)*sin(2*%pi*n*t/T), t, -T/2, T/2);
+
+terminos : makelist(n, n, 1, 20)$
+map('a, append([0],terminos));
+map('b, terminos);
+
+fs(nmax) := a(0)/2 + sum(a(n)*cos(2*%pi*n*t/T) + b(n)*sin(2*%pi*n*t/T), n, 1, nmax);
+
+lista_fs : map('fs, terminos)$
+
+with_slider(n, lista_fs, [g(t),n], [t,-10,10]);
