@@ -1,18 +1,18 @@
 # 4200371 - G1 - Vibraciones aleatorias
 
 ![Image](docs/imagenes/resonance.png)
+
 Fuente: <http://xkcd.com/228/>
 
-- Profesor: [Diego Andrés Alvarez Marín](https://sites.google.com/site/diegoandresalvarezmarin/alvarezCV_internet.pdf) (daalvarez@unal.edu.co)
-- Intensidad horaria semanal presencial: 4 horas (4 horas x 16 semanas = 64 horas/semestre)
+- Profesor: [Diego Andrés Alvarez Marín](https://sites.google.com/site/diegoandresalvarezmarin/) (daalvarez@unal.edu.co)
+- Horas de actividad presencial semanal: 4 horas.
   - Martes 16:00-18:00 Cxxx
   - Jueves 16:00-18:00 Cxxx
-- Programa: Maestría en Ingeniería - Estructuras.
-- Tipología: Asignatura elegible.
-- Horas de actividad presencial semanal: 4 horas.
 - Horas de actividad autónoma semanal: 4 horas.
 - Semanas: 16.
 - Créditos: 4.
+- Programa: Maestría en Ingeniería - Estructuras.
+- Tipología: Asignatura elegible.
 
 
 ## Tabla de contenido:
