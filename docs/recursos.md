@@ -4,8 +4,8 @@
 Smith, J.O. Mathematics of the Discrete Fourier Transform (DFT) with Audio Applications, Second Edition, http://ccrma.stanford.edu/~jos/mdft/, online book, 2007 edition,
 
 ## NPTEL
-https://nptel.ac.in/courses/112106072/# (Sayan Gupta - Random vibrations & Failure Analysis - Slides)
-https://nptel.ac.in/courses/105108080/# (C. S. Manohar - Stochastic Structural Dynamics -- Video)
+* https://nptel.ac.in/courses/112106072/# (Sayan Gupta - Random vibrations & Failure Analysis - Slides)
+* https://nptel.ac.in/courses/105108080/# (C. S. Manohar - Stochastic Structural Dynamics -- Video)
 
 ## Medición de vibraciones en estructuras utilizando el teléfono celular
 * http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1983-41952015000500009
@@ -14,6 +14,6 @@ https://nptel.ac.in/courses/105108080/# (C. S. Manohar - Stochastic Structural D
 * http://mechanicalvibration.com/dynamics_book.html
 
 ## Libros de Fourier (en la biblioteca)
-1. Series de fourier y problemas de controno. Ruel V. Churchill. McGraw Hill. 
-2. Analisis de fourier. Hwei P. Hsu. Prentice Hall. 
-3. Matematicas superiores para ingenieria. C. Ray Wylei. McGraw Hill. 
+* Series de fourier y problemas de controno. Ruel V. Churchill. McGraw Hill. 
+* Analisis de fourier. Hwei P. Hsu. Prentice Hall. 
+* Matematicas superiores para ingenieria. C. Ray Wylei. McGraw Hill. 
