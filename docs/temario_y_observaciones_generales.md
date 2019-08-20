@@ -43,7 +43,7 @@ El curso se desarrollará teniendo en cuenta diferentes aspectos pedagógicos co
 * Li, Jie (2009). Stochastic dynamics of structures. Wiley, 2009.
 * Lin, Y.K., Probabilistic Theory of Structural Dynamics , McGraw-Hill, New York, NY, 1967 and Krieger Pub., Huntington, NY, 1976.
 * Lin, Y.K., and G.Q. Cai (1995), Probabilistic Structural Dynamics: Advanced Theory and Applications McGraw-Hill.
-* Lutes, L. D. (2004). Random vibrations: analysis of structural and mechanical systems. Elsevier. DISPONIBLE  ELECTRONICAMENTE EN LA UNIVERSIDAD:  http://www.sciencedirect.com/science/book/9780750677653
+* Lutes, L. D. (2004). Random vibrations: analysis of structural and mechanical systems. Elsevier. **Disponible electrónicamente en la UN-SINAB:**  http://www.sciencedirect.com/science/book/9780750677653
 * Nakagawa, Toshio (2011). Stochastic processes: with applications to reliability theory. Springer.
 * Newland, D.E. (2005). An Introduction to Random Vibrations, Spectral & Wavelet Analysis: Third Edition, Dover Publications.
 * Papoulis, Athanasios (1991). Probability, random variables, and stochastic processes. McGraw-Hill.
