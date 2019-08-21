@@ -1,3 +1,4 @@
+# Universidad Nacional de Colombia - Sede Manizales
 # 4200371 - G1 - Vibraciones aleatorias
 
 ![Image](docs/imagenes/resonance.png)
@@ -8,7 +9,6 @@ Fuente: <http://xkcd.com/228/>
 - Horas de actividad presencial semanal: 4 horas.
   - Martes 16:00-18:00 Cxxx
   - Jueves 16:00-18:00 Cxxx
-- Horas de actividad autónoma semanal: 4 horas.
 - Semanas: 16.
 - Créditos: 4.
 - Programa: Maestría en Ingeniería - Estructuras.
