@@ -1,9 +1,9 @@
 <font size="30">Análisis de Fourier</font>
 
 # Diapositivas
-* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
+* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
 
-* Algunas diapositivas sobre análisis de Fourier: [02_Fourier.pdf](../diapositivas/02_Fourier.pdf)
+* Algunas diapositivas sobre análisis de Fourier: [02_Fourier.pdf](../../diapositivas/02_Fourier.pdf)
 
 # Repaso de variable compleja
 ## Sitios de internet
@@ -42,7 +42,7 @@ En MAXIMA existe un paquete especializado en calcular series y transformadas de 
 La clase la preparé con:
 * https://en.wikipedia.org/wiki/Fourier_transform
 * Brigham - The fast fourier transform and its applications
-http://www.dii.unipd.it/~gobbo/download/brigham/FFT&applications_1-4.pdf (capítulos 2 y 3)
+http://at.dii.unipd.it/renato.gobbo/download/brigham/FFT&applications_1-4.pdf (capítulos 2 y 3)
 
 ## MATLAB
 * Uso de los comandos `fourier()` e `ifourier()` de MATLAB: 
@@ -55,9 +55,6 @@ http://www.dii.unipd.it/~gobbo/download/brigham/FFT&applications_1-4.pdf (capít
 De Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 ed. https://ccrma.stanford.edu/~jos/mdft/mdft.html, estudiar los capítulos:
 *   Geometric Signal Theory
 *   The DFT Derived
-de Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 ed. https://ccrma.stanford.edu/~jos/mdft/mdft.html
-
-
 
 ## MATLAB
 * Programa para comparar la implementación de la DFT y la IDFT con los comandos `fft()` y `ifft()` de MATLAB: 
@@ -137,8 +134,7 @@ NOTA: recuerde que el zero-padding no incrementa la información, simplemente es
 * NI - Understanding FFTs and Windowing: http://www.ni.com/white-paper/4844/en/
 * http://www.bores.com/courses/advanced/windows/files/windows.pdf (FALTA LEER, PERO COMPLETO CONCEPTUALMENTE)
 * http://www.bores.com/courses/advanced/windows/index.htm
-* Michael Cerna and Audrey F. Harvey (2000). "The Fundamentals of FFT-Based Signal Analysis and Measurement" http://www.lumerink.com/courses/ece697/docs/Papers/The%20Fundamentals%20of%20FFT-Based%20Signal%20Analysis%20and%20Measurements.pdf
-
+* Michael Cerna and Audrey F. Harvey (2000). "The Fundamentals of FFT-Based Signal Analysis and Measurement" http://www.sjsu.edu/people/burford.furman/docs/me120/FFT_tutorial_NI.pdf
 
 ## MATLAB
 * Ventanas soportadas por el signal processing toolbox de MATLAB:https://www.mathworks.com/help/signal/windows.html

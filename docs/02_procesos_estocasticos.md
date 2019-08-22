@@ -1,9 +1,9 @@
 <font size="30">Procesos estocásticos</font>
 
 # Diapositivas
-* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
+* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
 
-* Algunas diapositivas sobre procesos estocásticos:  [03_stochastic_processes.pdf](../diapositivas/03_stochastic_processes.pdf)
+* Algunas diapositivas sobre procesos estocásticos:  [03_stochastic_processes.pdf](../../diapositivas/03_stochastic_processes.pdf)
 
 # Estimación de los parámetros de un proceso estocástico
 
