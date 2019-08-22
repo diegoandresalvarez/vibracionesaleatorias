@@ -1,9 +1,9 @@
 <font size="30">Análisis de Fourier</font>
 
 # Diapositivas
-* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
+* Conceptos superbásicos de análisis funcional: [01_conceptos_superbasicos_de_analisis_funcional.pdf](../diapositivas/01_conceptos_superbasicos_de_analisis_funcional.pdf)
 
-* Algunas diapositivas sobre análisis de Fourier: [02_Fourier.pdf](../../diapositivas/02_Fourier.pdf)
+* Algunas diapositivas sobre análisis de Fourier: [02_analisis_de_fourier.pdf](../diapositivas/02_analisis_de_fourier.pdf)
 
 # Repaso de variable compleja
 ## Sitios de internet
