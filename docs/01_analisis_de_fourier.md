@@ -1,12 +1,23 @@
- <font size="30">Análisis de Fourier</font>
+<font size="30">Análisis de Fourier</font>
 
 # Diapositivas
+* Conceptos superbásicos de análisis funcional: [01_Conceptos_superbasicos_de_analisis_funcional.pdf](../diapositivas/01_Conceptos_superbasicos_de_analisis_funcional.pdf)
 
+* Algunas diapositivas sobre análisis de Fourier: [02_Fourier.pdf](../diapositivas/02_Fourier.pdf)
 
+# Repaso de variable compleja
+## Sitios de internet
+De Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 ed. https://ccrma.stanford.edu/~jos/mdft/mdft.html, estudiar los capítulos:
+*   Introduction to the DFT
+*   Complex Numbers
+*   Proof of Euler's Identity
+*   Sinusoids and Exponentials
 
-# Series de Fourier
+# Series de Fourier y sus propiedades
 
 ## Sitios de internet
+La clase la preparé con la WIKIPEDIA.
+https://en.wikipedia.org/wiki/Fourier_series
 
 ## MAXIMA
 En MAXIMA existe un paquete especializado en calcular series y transformadas de Fourier: `calculus/fourie.mac`. Si quiere aprender a usarlo, se refiere a: http://web.csulb.edu/~woollett/mbe10fltrans.pdf
@@ -25,14 +36,28 @@ En MAXIMA existe un paquete especializado en calcular series y transformadas de 
 
 
 
-# Transformada de Fourier
+# Transformada de Fourier y sus propiedades
+
+## Sitios de internet
+La clase la preparé con:
+* https://en.wikipedia.org/wiki/Fourier_transform
+* Brigham - The fast fourier transform and its applications
+http://www.dii.unipd.it/~gobbo/download/brigham/FFT&applications_1-4.pdf (capítulos 2 y 3)
 
 ## MATLAB
 * Uso de los comandos `fourier()` e `ifourier()` de MATLAB: 
 [ej_transf_fourier.m](../codigo/fourier/ej_transf_fourier.m)
 
 
-# DFT vs FFT
+# La transformada discreta de Fourier (DFT) y su implementación la FFT
+
+## Sitios de internet
+De Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 ed. https://ccrma.stanford.edu/~jos/mdft/mdft.html, estudiar los capítulos:
+*   Geometric Signal Theory
+*   The DFT Derived
+de Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 ed. https://ccrma.stanford.edu/~jos/mdft/mdft.html
+
+
 
 ## MATLAB
 * Programa para comparar la implementación de la DFT y la IDFT con los comandos `fft()` y `ifft()` de MATLAB: 
@@ -76,9 +101,15 @@ t = linspace(0,1,50); x = sin(2*pi*t);
 * [positiveFFT.m](../codigo/fourier/positiveFFT.m)
 * [fftTutorial_resuelto_como_serie_de_Fourier.m](../codigo/fourier/fftTutorial_resuelto_como_serie_de_Fourier.m)
 
-# Efectos del zero-padding. Uso de `nextpow2()`
+# Zero padding
+
+# Sitios de internet
+* https://ccrma.stanford.edu/~jos/dft/Zero_Padding_Theorem_Spectral.html
+* NI - Zero Padding Does Not Buy Spectral Resolution http://www.ni.com/tutorial/4880/en/
+* http://www.embedded.com/design/other/4212939/Time-domain-interpolation-using-the-Fast-Fourier-Transform-
 
 ## MATLAB
+Efectos del zero-padding. Uso de `nextpow2()`: 
 
 NOTA: recuerde que el zero-padding no incrementa la información, simplemente es una herramienta útil para ver mejor los picos cuando las frecuencias están muy juntas.
 * [centeredFFT_zero_padding.m](../codigo/fourier/centeredFFT_zero_padding.m)
@@ -101,8 +132,12 @@ NOTA: recuerde que el zero-padding no incrementa la información, simplemente es
 
 # Ventaneo (windowing)
 
-Definición matemática:
-* https://en.wikipedia.org/wiki/Window_function
+## Sitios de internet
+* Definición matemática: https://en.wikipedia.org/wiki/Window_function
+* NI - Understanding FFTs and Windowing: http://www.ni.com/white-paper/4844/en/
+* http://www.bores.com/courses/advanced/windows/files/windows.pdf (FALTA LEER, PERO COMPLETO CONCEPTUALMENTE)
+* http://www.bores.com/courses/advanced/windows/index.htm
+* Michael Cerna and Audrey F. Harvey (2000). "The Fundamentals of FFT-Based Signal Analysis and Measurement" http://www.lumerink.com/courses/ece697/docs/Papers/The%20Fundamentals%20of%20FFT-Based%20Signal%20Analysis%20and%20Measurements.pdf
 
 
 ## MATLAB

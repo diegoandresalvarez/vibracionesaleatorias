@@ -14,6 +14,6 @@ Smith, J.O. Mathematics of the Discrete Fourier Transform (DFT) with Audio Appli
 * http://mechanicalvibration.com/dynamics_book.html
 
 ## Libros de Fourier (en la biblioteca)
-* Series de fourier y problemas de controno. Ruel V. Churchill. McGraw Hill. 
-* Analisis de fourier. Hwei P. Hsu. Prentice Hall. 
-* Matematicas superiores para ingenieria. C. Ray Wylei. McGraw Hill. 
+* Series de Fourier y problemas de contorno. Ruel V. Churchill. McGraw Hill. 
+* Análisis de Fourier. Hwei P. Hsu. Prentice Hall. 
+* Matemáticas superiores para ingeniería. C. Ray Wiley. McGraw Hill. 
