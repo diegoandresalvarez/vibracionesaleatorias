@@ -1,4 +1,4 @@
- <font size="10">Análisis de Fourier</font>
+ <font size="30">Análisis de Fourier</font>
 
 # Diapositivas
 
