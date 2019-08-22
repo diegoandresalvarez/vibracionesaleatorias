@@ -20,12 +20,12 @@ Fuente: <http://xkcd.com/228/>
 - [Recursos](docs/recursos.md)
 
 # Material de estudio
-0. [Introducción](../diapositivas/00_introduccion.pdf)
-1. [Análisis de Fourier](../docs/01_analisis_de_fourier.md)
-2. [Procesos estocásticos](../docs/02_procesos_estocasticos.md)
-3. [Sistemas lineales](../docs/03_sistemas_lineales.md)
+0. [Introducción](diapositivas/00_introduccion.pdf)
+1. [Análisis de Fourier](docs/01_analisis_de_fourier.md)
+2. [Procesos estocásticos](docs/02_procesos_estocasticos.md)
+3. [Sistemas lineales](docs/03_sistemas_lineales.md)
 
 
 ## Talleres
-- [Taller 1](docs//taller_1.md)
+- [Taller 1](docs/taller_1.md)
 - [Taller 2](Por definir)
