@@ -35,7 +35,7 @@ En MAXIMA existe un paquete especializado en calcular series y transformadas de 
 # DFT vs FFT
 
 ## MATLAB
-* Programa para comparar la implementacion de la DFT y la IDFT con los comandos `fft()` y `ifft()` de MATLAB: 
+* Programa para comparar la implementación de la DFT y la IDFT con los comandos `fft()` y `ifft()` de MATLAB: 
 [dft_vs_fft.m](../codigo/fourier/dft_vs_fft.m)
 
 * Calculo de la DFT utilizando el método matricial y comando `dftmtx()`: 
@@ -61,7 +61,7 @@ t = linspace(0,1,50); x = sin(2*pi*t);
 
 ## Sitios de internet
 * Epstein - How Well Does the Finite Fourier Transform Approximate the Fourier Transform?: https://www.math.upenn.edu/~cle/papers/fftvsft.pdf
-* Approximating the Fourier Transform with the Discrete Fourier Transform: http://www.ncbecker.de/python-course/chapter_11/script/fft.pdf
+* Approximating the Fourier Transform with the Discrete Fourier Transform: http://www.ncbecker.de/python-course/chapter_11/script/fft.pdf [LINK MUERTO]
 * Axelrod -  Approximating the Analytic Fourier Transform with the Discrete Fourier Transform: http://arxiv.org/abs/1508.01282
 
 ## MATLAB
@@ -106,7 +106,7 @@ Definición matemática:
 
 
 ## MATLAB
-* Ventanas soportadas por el signal processing toobox de MATLAB:https://www.mathworks.com/help/signal/windows.html
+* Ventanas soportadas por el signal processing toolbox de MATLAB:https://www.mathworks.com/help/signal/windows.html
 
 * Herramientas para visualizar y diseñar ventanas:
   * `wintool` - Window Design & Analysis Tool
