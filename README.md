@@ -17,9 +17,13 @@ Fuente: <http://xkcd.com/228/>
 
 ## Tabla de contenido:
 - [Temario y observaciones generales del curso](docs/temario_y_observaciones_generales.md)
-- [Códigos](docs/codigos.md)
-- [Diapositivas](diapositivas.md)
 - [Recursos](docs/recursos.md)
+
+# Material de estudio
+0. [Introducción](../diapositivas/00_introduccion.pdf)
+1. [Análisis de Fourier](../docs/01_analisis_de_fourier.md)
+2. [Procesos estocásticos](../docs/02_procesos_estocasticos.md)
+3. [Sistemas lineales](../docs/03_sistemas_lineales.md)
 
 
 ## Talleres
