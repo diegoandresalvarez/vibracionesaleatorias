@@ -23,16 +23,16 @@ https://en.wikipedia.org/wiki/Fourier_series
 En MAXIMA existe un paquete especializado en calcular series y transformadas de Fourier: `calculus/fourie.mac`. Si quiere aprender a usarlo, se refiere a: http://web.csulb.edu/~woollett/mbe10fltrans.pdf
 
 * Serie de Fourier de g(t) = square wave, para t \in [-10, 10]:
-[serie_fourier_gt_square_wave.mac](../codigo/fourier/serie_fourier_gt_square_wave.mac)
+[serie_fourier_gt_square_wave.mac](../codigo/fourier/01_series_de_fourier_con_MAXIMA/serie_fourier_gt_square_wave.mac)
 
 * Serie de Fourier de g(t) = t, para t \in [-pi, pi]:
-[serie_fourier_gt_t.mac](../codigo/fourier/serie_fourier_gt_t.mac)
+[serie_fourier_gt_t.mac](../codigo/fourier/01_series_de_fourier_con_MAXIMA/serie_fourier_gt_t.mac)
 
 * Serie de Fourier de g(t) = 2*rect(t;1), para t \in [-2, 2]:
-[serie_fourier_gt_2_rect_t.mac](../codigo/fourier/serie_fourier_gt_2_rect_t.mac)
+[serie_fourier_gt_2_rect_t.mac](../codigo/fourier/01_series_de_fourier_con_MAXIMA/serie_fourier_gt_2_rect_t.mac)
 
 * Serie de Fourier de g(t) = abs(t), para t \in [-2, 2]:
-[serie_fourier_gt_abs_t.mac](../codigo/fourier/serie_fourier_gt_abs_t.mac)
+[serie_fourier_gt_abs_t.mac](../codigo/fourier/01_series_de_fourier_con_MAXIMA/serie_fourier_gt_abs_t.mac)
 
 
 
@@ -45,9 +45,19 @@ La clase la preparé con:
 http://at.dii.unipd.it/renato.gobbo/download/brigham/FFT&applications_1-4.pdf (capítulos 2 y 3)
 
 ## MATLAB
-* Uso de los comandos `fourier()` e `ifourier()` de MATLAB: 
-[ej_transf_fourier.m](../codigo/fourier/ej_transf_fourier.m)
+MATLAB calcula la transformada de Fourier y su correspondiente inversa utilizando las ecuaciones:
 
+![fourier](imagenes/fourier_MATLAB.png)
+
+![ifourier](imagenes/ifourier_MATLAB.png)
+
+para tal fin, se deben especificar los correspondientes parámetros c y s. Por defecto MATLAB emplea `c = 1`y `s = -1`.
+
+* Uso de los comandos `fourier()` e `ifourier()` de MATLAB:
+  * https://www.mathworks.com/help/symbolic/compute-fourier-and-inverse-fourier-transforms.html (ejemplo interesante de una viga)
+  * https://www.mathworks.com/help/symbolic/fourier.html
+  * https://www.mathworks.com/help/symbolic/ifourier.html
+  * [ej_transf_fourier.m](../codigo/fourier/02_transformada_de_fourier_MATLAB/ej_transf_fourier.m)
 
 # La transformada discreta de Fourier (DFT) y su implementación la FFT
 
