@@ -51,7 +51,9 @@ MATLAB calcula la transformada de Fourier y su correspondiente inversa utilizand
 
 ![ifourier](imagenes/ifourier_MATLAB.png)
 
-para tal fin, se deben especificar los correspondientes parámetros c y s. Por defecto MATLAB emplea `c = 1`y `s = -1`.
+Tenga en cuenta que para calcular la transformada inversa de Fourier, MATLAB utiliza el procedimiento:
+
+![calculo_ifourier_MATLAB](imagenes/calculo_ifourier_MATLAB.png)
 
 * Uso de los comandos `fourier()` e `ifourier()` de MATLAB:
   * https://www.mathworks.com/help/symbolic/compute-fourier-and-inverse-fourier-transforms.html (ejemplo interesante de una viga)
