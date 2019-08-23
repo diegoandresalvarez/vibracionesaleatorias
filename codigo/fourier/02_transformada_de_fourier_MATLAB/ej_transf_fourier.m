@@ -37,7 +37,11 @@ syms t f(t) w
 f = diff(f(t), t);
 fourier(f, t, w)
 
+
+
 %% TRANSFORMADA INVERSA DE FOURIER
+% NOTA: mire adicionalmente los ejemplos que se encuentran en:
+% https://www.mathworks.com/help/symbolic/ifourier.html
 
 fprintf('\nTransformada inversa de Fourier de F(w) = sqrt(sym(pi))*exp(-w^2/4)\n');
 syms t w
@@ -100,7 +104,9 @@ sympref('FourierParameters', [1, -1]);
 fourier(f, x, nu)
 
 % NOTA IMPORTANTE: 
-% Preferences set by sympref persist through your current and future MATLAB sessions. Restore the default values of c and s by setting FourierParameters to 'default'.
+% Preferences set by sympref persist through your current and future MATLAB 
+% sessions. Restore the default values of c and s by setting FourierParameters 
+% to 'default'.
 
 sympref('FourierParameters', 'default');
 
