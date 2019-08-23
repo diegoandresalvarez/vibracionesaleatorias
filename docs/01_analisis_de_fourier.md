@@ -34,6 +34,9 @@ En MAXIMA existe un paquete especializado en calcular series y transformadas de 
 * Serie de Fourier de g(t) = abs(t), para t \in [-2, 2]:
 [serie_fourier_gt_abs_t.mac](../codigo/fourier/01_series_de_fourier_con_MAXIMA/serie_fourier_gt_abs_t.mac)
 
+## PYTHON (SymPy)
+* https://docs.sympy.org/latest/modules/series/fourier.html
+
 
 
 # Transformada de Fourier y sus propiedades
@@ -60,6 +63,10 @@ Tenga en cuenta que para calcular la transformada inversa de Fourier, MATLAB uti
   * https://www.mathworks.com/help/symbolic/fourier.html
   * https://www.mathworks.com/help/symbolic/ifourier.html
   * [ej_transf_fourier.m](../codigo/fourier/02_transformada_de_fourier_MATLAB/ej_transf_fourier.m)
+
+## PYTHON (SymPy)
+Para ello se usan las funciones `fourier_transform()` y `inverse_fourier_transform()`:
+* https://docs.sympy.org/latest/modules/integrals/integrals.html
 
 # La transformada discreta de Fourier (DFT) y su implementación la FFT
 
