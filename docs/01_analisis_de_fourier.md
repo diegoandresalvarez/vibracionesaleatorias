@@ -1,4 +1,8 @@
-<font size="30">Análisis de Fourier</font>
+# Análisis de Fourier
+
+![Image](https://imgs.xkcd.com/comics/fourier.jpg)
+
+Fuente: <http://xkcd.com/26/>
 
 # Diapositivas
 * Conceptos superbásicos de análisis funcional: [01_conceptos_superbasicos_de_analisis_funcional.pdf](../diapositivas/01_conceptos_superbasicos_de_analisis_funcional.pdf)
