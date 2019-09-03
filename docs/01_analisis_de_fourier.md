@@ -23,6 +23,8 @@ De Julius O. Smith III - Discrete Fourier Transform with audio applications, 2 e
 La clase la preparé con la WIKIPEDIA.
 https://en.wikipedia.org/wiki/Fourier_series
 
+* Hwei P. Hsu (1973). Análisis de Fourier. Prentice Hall. Se encuentra en la biblioteca 515.2433/H873a. Un libro bastante fácil de leer.
+
 ## MAXIMA
 En MAXIMA existe un paquete especializado en calcular series y transformadas de Fourier: `calculus/fourie.mac`. Si quiere aprender a usarlo, se refiere a: http://web.csulb.edu/~woollett/mbe10fltrans.pdf
 
@@ -48,8 +50,10 @@ En MAXIMA existe un paquete especializado en calcular series y transformadas de 
 ## Sitios de internet
 La clase la preparé con:
 * https://en.wikipedia.org/wiki/Fourier_transform
+* Hwei P. Hsu (1973). Análisis de Fourier. Prentice Hall. Se encuentra en la biblioteca 515.2433/H873a. Un libro bastante fácil de leer.
 * Brigham - The fast fourier transform and its applications
 http://at.dii.unipd.it/renato.gobbo/download/brigham/FFT&applications_1-4.pdf (capítulos 2 y 3)
+* http://www.thefouriertransform.com/
 
 ## MATLAB
 MATLAB calcula la transformada de Fourier y su correspondiente inversa utilizando las ecuaciones:
