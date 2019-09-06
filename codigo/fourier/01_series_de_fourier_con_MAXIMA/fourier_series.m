@@ -3,17 +3,36 @@
 syms x P n N
 
 %% Numero de terminos a calcular de la serie de Taylor
-N = 40;
+N = 10;
 
 %% Se define la funcion s(x) y el periodo P
+%s = cos(2*x);  P = 2*sym(pi);
+%s = sin(2*x);  P = 2*sym(pi);
+%s = cos(2*x + sym(pi/4));  P = 2*sym(pi);
+%s = sin(2*x + sym(pi/4));  P = 2*sym(pi);
+
 %s = exp(-x); P = 2;
-%s = abs(x); P = 2;
-%s = x; P = 2;
-%%{
+
+% Una funcion par tiene un espectro (c) real -> verifique mirando c
+%s = abs(x);  P = 2;
+
+
+
+% Observe en los dos siguientes ejemplos como el espectro se llena de ceros
+% cuando se escoge como periodo un múltiplod el periodo fundamental. 
+% Observe que los |c_n| y los arg(c_n) se conservan de la misma magnitud.
+% 1)
+s = x; P = 2;
+%
+% 2)
+%{
 s = + heaviside(x+3)*heaviside(-1-x)*(x+2) ... 
     + heaviside(x+1)*heaviside(1-x)*x ...
     + heaviside(x-1)*heaviside(3-x)*(x-2); 
 P = 6;
+
+% Adicionalmente, del ejemplo 1): una funcion impar tiene un espectro 
+% imaginario puro -> verifique mirando c
 %}
 
 
@@ -86,10 +105,10 @@ end
 figure
 subplot(2,1,1)
 stem(-N:N, abs(c));
-title('Espectro de frecuencia')
+title('Espectro discreto de frecuencia')
 ylabel('|c_n|')
 subplot(2,1,2)
 stem(-N:N, angle(c));
-title('Espectro de fase')
+title('Espectro discreto de fase')
 ylabel('arg(c_n) [rad]')
 xlabel('n')
