@@ -1,0 +1,25 @@
+/* 
+Verificación de que el conjunto de funciones:
+
+phi(x,n) := A[n]*sin(2*%pi*x*n/P + %phi[n]);
+
+es una base ortogonal
+*/ 
+
+declare(m, integer)$
+declare(n, integer)$
+assume(m > n)$
+
+facts();
+
+phi(x,n) := A[n]*sin(2*%pi*x*n/P + %phi[n]);
+
+print("Caso 1: m != n")$
+trigexpand(integrate(phi(x,n)*phi(x,m), x, -P/2, P/2));
+
+print("Caso 2: m == n")$
+print("n == 0")$
+factor(integrate(phi(x,0)*phi(x,0), x, -P/2, P/2));
+print("n > 0")$
+trigreduce(integrate(phi(x,n)*phi(x,n), x, -P/2, P/2));
+
