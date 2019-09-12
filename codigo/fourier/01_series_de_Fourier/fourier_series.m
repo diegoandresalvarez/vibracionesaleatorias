@@ -7,7 +7,7 @@ N = 10;
 
 %% Se define la funcion s(x) y el periodo P
 %s = cos(2*x);  P = 2*sym(pi);
-%s = sin(2*x);  P = 2*sym(pi);
+s = sin(2*x);  P = 2*sym(pi);
 %s = cos(2*x + sym(pi/4));  P = 2*sym(pi);
 %s = sin(2*x + sym(pi/4));  P = 2*sym(pi);
 
@@ -22,7 +22,7 @@ N = 10;
 % cuando se escoge como periodo un múltiplod el periodo fundamental. 
 % Observe que los |c_n| y los arg(c_n) se conservan de la misma magnitud.
 % 1)
-s = x; P = 2;
+%s = x; P = 2;
 %
 % 2)
 %{
