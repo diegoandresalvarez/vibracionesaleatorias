@@ -17,6 +17,7 @@ T    = 50;                      % periodo para la serie de Fourier
 
 dw = 2*pi/T;                    % incremento de n para la serie de Fourier
 N = floor(wmax/dw);             % número de términos de la serie de Fourier
+                                % que estarán en [-wxmax, +wmax]
 n = -N:N;
 w = linspace(-wmax,+wmax,5000); % frecuencias angulares para la transformada
 
