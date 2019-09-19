@@ -1,6 +1,6 @@
 %% Comparación de la serie y de la transformada de Fourier
 % Aquí se está analizando un escalón entre -tau/2 y tau/2
-% El escalón sería un f(t) = heaviside(t-tau/2)*heaviside(t+tau/2)
+% El escalón sería un f = heaviside(t+tau/2) - heaviside(t-tau/2);
 %
 %                                  ^ f(t)
 %                                  |
@@ -22,10 +22,17 @@ w = linspace(-wmax,+wmax,5000); % frecuencias angulares para la transformada
 
 %% se define y calcula la serie y la tranformada de Fourier
 tau = 1;                            % el escalón está entre -tau/2 y tau/2
-c = @(n) (tau/T)*sinc(pi*n*tau/T);  % serie
-F = @(w) tau*sinc(w*tau/2);         % transformada
-cn = c(n);
-Fw = F(w);
+%{
+syms t tau T n w
+%assume(T>tau)
+assume(tau>0)
+f = heaviside(t+tau/2) - heaviside(t-tau/2);
+cn  = simplify((1/T)*int(f*exp(-1j*(2*pi*n/T)*t), t, -tau/2, tau/2))
+Fw1 = simplify(int(f*exp(-1j*w*t), t, -tau/2, tau/2))
+Fw2 = simplify(fourier(f,t,w))
+%}
+cn = (tau/T)*sinc(pi*n*tau/T);  % serie
+Fw = tau*sinc(w*tau/2);         % transformada
 
 %% Se dibuja la serie vs la transformada de Fourier
 figure
