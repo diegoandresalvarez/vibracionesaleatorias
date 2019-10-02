@@ -3,44 +3,56 @@
 
 clear, clc, close all
 
-x = [2 3 -1 4 8 2 -4];  % vector al que le sacaremos la DFT
+x = [2 7 -5 4 -9 2 -4 9];  % vector al que le sacaremos la DFT
 N = length(x);
 X = zeros(size(x));     % aqui se almacenara la DFT de x
 
-%% Se calcula la DFT
+%% Se calcula la DFT. Forma 1:
 for k = 0:N-1
     for n = 0:N-1
-        X(k+1) = X(k+1) + x(n+1)*exp(-j*2*pi*k*n/N);
+        X(k +1) = X(k +1) + x(n +1)*exp(-j*2*pi*k*n/N);
     end
 end
 
-%{
+%% Se calcula la DFT. Forma 2:
 n = 0:N-1;
-X = zeros(size(x));     % aqui se almacenara la DFT de x
+X2 = zeros(size(x));     % aqui se almacenara la DFT de x
 for k = 0:N-1
-   X(k+1) = sum(x.*exp(-j*2*pi*k*n/N));
+   X2(k +1) = sum(x.*exp(-j*2*pi*k*n/N));
 end
-%}
 
 %% Se grafican los resultados
 t = 0:N-1;
-subplot(311)
+subplot(3,2,[1 2])
 stem(t,x);
-xlabel('Time (s)');
+xlabel(sprintf('Time (s), N = %d', N))
 ylabel('Amplitude');
 title('Time domain - Input sequence')
 
-subplot(312)
+subplot(323)
 stem(t,abs(X))
 xlabel('Frequency');
 ylabel('|X(k)|');
 title('Frequency domain - Magnitude response')
 
-subplot(313)
+subplot(325)
 stem(t,angle(X))
 xlabel('Frequency');
 ylabel('Phase');
 title('Frequency domain - Phase response')
+
+subplot(324)
+stem(t,real(X))
+xlabel('Frequency');
+ylabel('Real{X}');
+title('Frequency domain - Real part')
+
+subplot(326)
+stem(t,imag(X))
+xlabel('Frequency');
+ylabel('Imag{X}');
+title('Frequency domain - Imaginary part')
+
 
 %% Se imprimen los resultados de DFT
 disp('*** *** DFT *** ***')
@@ -57,7 +69,7 @@ disp('angle(fft(x)) = '); disp(angle(fft_x))  % to check phase
 
 %% AHORA LA TRANSFORMADA INVERSA DISCRETA DE FOURIER
 disp('*** *** IDFT vs ifft *** ***')
-%% Se calcula la DFT
+%% Se calcula la IDFT. Forma 1:
 idft_X = zeros(size(x));
 X = fft_x;           % fft provee una estimacion mas precisa (comente/descomente)
 for k = 0:N-1
@@ -66,6 +78,15 @@ for k = 0:N-1
     end
 end
 idft_X = idft_X/N;
+
+
+%% Se calcula la DFT. Forma 2:
+k = 0:N-1;
+idft_X2 = zeros(size(x));     % aqui se almacenara la DFT de x
+for n = 0:N-1
+   idft_X2(n +1) = sum(X.*exp(j*2*pi*k*n/N));
+end
+idft_X2 = idft_X2/N;
 
 %% Se imprimen los resultados
 disp('x  = ');        disp(x)
