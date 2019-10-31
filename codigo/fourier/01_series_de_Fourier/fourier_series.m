@@ -6,21 +6,22 @@ syms x P n N
 N = 10;
 
 %% Se define la funcion s(x) y el periodo P
-%s = cos(2*x);  P = 2*sym(pi);             % == cos(2*x + 0)
-%s = sin(2*x);  P = 2*sym(pi);             % == cos(2*x - pi/2))
+%s = 3*exp(1j*4*x);         P = 2*sym(pi); % == 3*exp(1j*2*x);
+%s = cos(2*x);              P = 2*sym(pi); % == cos(2*x + 0)
+%s = sin(2*x);              P = 2*sym(pi); % == cos(2*x - pi/2))
 %s = cos(2*x + sym(pi/4));  P = 2*sym(pi); % == cos(2*x + sym(pi/4))
-%s = sin(2*x + sym(pi/4));  P = 2*sym(pi);  % == cos(2*x - sym(pi/4))
+%s = sin(2*x + sym(pi/4));  P = 2*sym(pi); % == cos(2*x - sym(pi/4))
 
-s = exp(-x); P = 2;
+%s = exp(-x); P = 2;
 
 % Una funcion par tiene un espectro (c) real -> verifique mirando c
 %s = abs(x);  P = 2;
 
 % Observe en los dos siguientes ejemplos como el espectro se llena de ceros
-% cuando se escoge como periodo un múltiplod el periodo fundamental. 
+% cuando se escoge como periodo un múltiplo del periodo fundamental. 
 % Observe que los |c_n| y los arg(c_n) se conservan de la misma magnitud.
 % 1)
-%s = x; P = 2;
+s = x; P = 2;
 %
 % 2)
 %{
