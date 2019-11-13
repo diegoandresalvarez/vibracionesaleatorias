@@ -1,3 +1,9 @@
+% !TeX spellcheck = en_US
+% !TeX document-id = {cf032f19-4427-4a50-b0ba-ddee651fb980}
+% !TeX program = txs:///dvi-ps-pdf-chain
+% TeX program = txs:///dvi-chain
+%DVI -> PS -> PDF
+
 \documentclass[12pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -13,6 +19,9 @@
 
 \newcommand{\EE}{\operatorname{E}}
 \newcommand{\VV}{\operatorname{Var}}
+\newcommand{\ve}[1]{{\boldsymbol{#1}}}
+\newcommand{\ma}[1]{{\boldsymbol{#1}}}
+\newcommand{\dd}{\operatorname{d} \!}
 
 \begin{document}
 \section*{Example 2.5}
@@ -40,14 +49,21 @@ A typical sample function of a binary noise is shown in Figure \ref{fig:sample_b
 \psfrag{+1}{\!$+1$}
 \psfrag{-1}{\!\!\!$-1$}
 \includegraphics[width=0.8\textwidth]{sample_binary_noise.eps}
-\caption{A Typical Sample Function of a Binary Noise}
+\caption{A typical sample function of a binary noise}
 \label{fig:sample_binary_noise}
 \end{figure}
 
 The mean of $X(t)$ is zero, since
-\begin{equation}
-\EE [X(t)] = (-1)p_{Y_n}(-1) + (+1)p_{Y_n}(1) = (-1)(0.5) + (+1)(0.5) = 0;
-\end{equation}
+\begin{align}
+\EE [X(t)] 
+&= \EE_{AY}[Y(t-A)]\\
+&= \EE_{A}[\EE_{Y}[Y(t-A)]]\\
+&= \int_0^\Delta \sum_{y\in \{-1, +1\}} y(t-a) p_Y(y) p_A(a) \dd a\\
+%&= \EE[Y_n] P\left\{ A \leq \Delta \right\} + \underbrace{\EE [Y_{n+1}]}_{=\EE [Y_{n}]} P\left\{ A > \Delta \right\}\\
+&= \EE[Y_n] = (-1)p_{Y_n}(-1) + (+1)p_{Y_n}(+1)\\
+&= (-1)(0.5) + (+1)(0.5)\\
+& = 0;
+\end{align}
 its mean squared is
 \begin{equation}
 \EE[X(t)^2] = (-1)^2 p_{Y_n}(-1) + (1)^2 p_{Y_n}(1) = (-1)^2 (0.5) + (+1)^2(0.5) = 1,
@@ -62,7 +78,7 @@ Consider now the correlation function $R(t_1, t_2)$. It is also clear that:
 R(t_1, t_2) = \EE\left[X(t_1) X(t_2)\right] =0, \ \ \left|t_2 - t_1 \right| > \Delta \label{eq:2.60}
 \end{equation} 
 due to independence of $X(t_1)$ and $X(t_2)$ when $t_1$ and $t_2$ are in different intervals. For $\left|t_2 - t_1 \right| \leq \Delta$, whether or not $X(t_1)$ and $X(t_2)$ are situated in the same interval depends upon the value $A$ takes. Then, either (see Figure~\ref{fig:cases_binary_noise}),
-\begin{figure}[!hb]
+\begin{figure}[!ht]
 \centering
 \psfrag{Yn}{$Y_n$}
 \psfrag{Yn1}{$Y_{n+1}$}
@@ -76,7 +92,7 @@ due to independence of $X(t_1)$ and $X(t_2)$ when $t_1$ and $t_2$ are in differe
 \psfrag{case 1}{case 1}
 \psfrag{case 2}{case 2}
 \includegraphics[width=0.8\textwidth]{cases_binary_noise.eps}
-\caption{$t_1$ and $t_2$ in the same or in different time intervals.}
+\caption{$t_1$ and $t_2$ in the same (case 1) or in different time intervals (case 2).}
 \label{fig:cases_binary_noise}
 \end{figure}
 \begin{itemize}
@@ -87,7 +103,8 @@ due to independence of $X(t_1)$ and $X(t_2)$ when $t_1$ and $t_2$ are in differe
 Hence, if $\left|t_2 - t_1\right| \leq \Delta$ then
 \begin{align}
 R(t_1,t_2) &= \EE\left[X(t_1) X(t_2)\right] \\
-&= \EE\left[Y(t_1 - A) Y(t_2-A)\right] \\
+&= \EE_{A}\left[\EE_Y\left[Y(t_1 - A) Y(t_2-A)\right]\right] \\
+&= \int_0^\Delta \sum_{y\in \{-1, +1\}} y(t_1-a)y(t_2-a) p_Y(y) p_A(a) \dd a\\
 &= \EE\left\{Y_n^2  \right\} P\left\{ A \leq \Delta - \left| t_2-t_1 \right| \right\} + \EE\left\{Y_n Y_{n+1}  \right\} P\left\{ A > \Delta - \left| t_2-t_1 \right| \right\}\\
 &= (1)\left(1-\frac{\left|t_2-t_1\right|}{\Delta}\right) + (0)\left(\frac{\left|t_2-t_1 \right|}{\Delta}\right) \\
 &= 1 - \frac{\left| t_2-t_1 \right|}{\Delta} \label{eq:2.61}
